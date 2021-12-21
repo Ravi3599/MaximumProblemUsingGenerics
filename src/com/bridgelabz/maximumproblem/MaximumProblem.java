@@ -11,12 +11,12 @@ public class MaximumProblem {
 		System.out.println(integerMax+" is maximum amongst integer numbers");
 		
 		operation.getInputForFloat();
-		float floatMax =operation.testMaximum(operation.number1,operation.number2,operation.number3);
+		Float floatMax =operation.testMaximum(operation.number1,operation.number2,operation.number3);
 		System.out.println(floatMax+" is maximum amongst float numbers");
 		
 		operation.getInputForString();
-		String stringMax=operation.testMaximum(operation.string1,operation.string2,operation.string3);
-		System.out.println(stringMax+" is maximum amongst strings");
+		String stringMax =operation.testMaximum(operation.string1,operation.string2,operation.string3);
+		System.out.println(stringMax+" is maximum alphabetically amongst strings");
 		
 	}
 

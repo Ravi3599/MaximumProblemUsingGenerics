@@ -2,10 +2,10 @@ package com.bridgelabz.maximumproblem;
 
 import java.util.Scanner;
 
-public class Operation {
+public class Operation <E> {
 	public static Integer firstNumber,secondNumber,thirdNumber;
-	public static Float number1=0.0f,number2=0.0f,number3=0.0f;
-	public static String string1,string2,string3;
+	public static Float number1=0.0f,number2=0.0f,number3=0.0f,max2=0.0f;
+	public static String string1,string2,string3,max3;
 
 	static Scanner sc = new Scanner(System.in);
 
@@ -33,6 +33,7 @@ public class Operation {
 		System.out.println("Enter third string");
 		string3 = sc.next();
 	}
+	
 	public static <E extends Comparable<E>> E testMaximum(E a,E b,E c) {
 		E max = a;
 		if(b.compareTo(max) > 0){
